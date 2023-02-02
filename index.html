@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+
+        * {
+            font-family: 'Gowun Dodum', sans-serif;
+        }
+
+        .mytitle {
+            background-color: grey;
+            color: salmon;
+
+            height: 360px;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            background-image: linear-gradient(0deg, rgba(3, 3, 3, 0.712), rgba(54, 2, 13, 0.567)), url('https://images.unsplash.com/photo-1570385404967-fe4e1b48454b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80');
+            background-position: center;
+            background-size: cover;
+        }
+
+        .mytitle>h1 {
+            font-size: 36px;
+        }
+
+        .mytitle>button {
+            width: 230px;
+            height: 50px;
+            font-size: 16px;
+
+            background-color: transparent;
+
+            border: 1px solid salmon;
+            border-radius: 120px;
+            color: salmon;
+
+            margin-top: 12px;
+
+            width: auto;
+            padding: 12px 32px 12px 32px;
+        }
+
+        .mytitle>h5 {
+            margin-top: 32px;
+            font-size: 16px;
+            color: rgba(250, 128, 114, 0.521);
+        }
+
+        .mytitle>button:hover {
+            border: 2px solid salmon;
+            font-size: 16px;
+            color: rgb(248, 67, 46);
+
+            background-color: rgba(255, 255, 255, 0.75);
+        }
+
+        .mycomment {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .mycards {
+            width: 1200px;
+            margin: 30px auto 30px auto;
+        }
+
+        .mypost {
+            width: 500px;
+            margin: 32px auto 32px auto;
+            padding: 24px;
+
+            border-radius: 8px;
+
+            box-shadow: 0px 0px 4px 0px rgba(84, 84, 84, 0.436);
+        }
+
+        .mybtn {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+
+            margin-top: 16px;
+        }
+
+        .mybtn>button {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="mytitle">
+        <h1>내 인생 최고의 띵작 영화들</h1>
+        <button>영화 기록해보기</button>
+        <h5> @ made by Pride.Lee</h5>
+    </div>
+    <div class="mypost">
+        <div class="form-floating mb-3">
+            <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+            <label for="floatingInput">영화 URL</label>
+        </div>
+        <div class="form-floating">
+            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2"
+                style="height: 100px"></textarea>
+            <label for="floatingTextarea2">코멘트</label>
+        </div>
+        <div class="mybtn">
+            <button type="button" class="btn btn-outline-dark">닫기</button>
+            <button type="button" class="btn btn-dark">기록하기</button>
+        </div>
+    </div>
+    <div class="mycards">
+        <div class="row row-cols-1 row-cols-md-4 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1635805737707-575885ab0820?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Spider-Man: Into the Spider-Verse</h5>
+                        <p class="card-text">여기는 설명이 들어갑니다.</p>
+                        <P>⭐⭐⭐⭐⭐</P>
+                        <p class="mycomment">여기에 나의 의견을 쓰면 됩니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1651204881283-46e3bbc309b0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">HALLOWEEN</h5>
+                        <p class="card-text">여기는 설명이 들어갑니다.</p>
+                        <P>⭐⭐⭐⭐⭐</P>
+                        <p class="mycomment">여기에 나의 의견을 쓰면 됩니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1505079174911-ea23eecf3445?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Somebody</h5>
+                        <p class="card-text">여기는 설명이 들어갑니다.</p>
+                        <P>⭐⭐⭐⭐⭐</P>
+                        <p class="mycomment">여기에 나의 의견을 쓰면 됩니다.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://images.unsplash.com/photo-1531259683007-016a7b628fc3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">The Dark Knight Rises</h5>
+                        <p class="card-text">여기는 설명이 들어갑니다.</p>
+                        <P>⭐⭐⭐⭐⭐</P>
+                        <p class="mycomment">여기에 나의 의견을 쓰면 됩니다.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
